@@ -1,0 +1,10 @@
+D:\QLCHBCAFE\QLCHBCAFE\bin\Debug\QLCHBCAFE.exe.config
+D:\QLCHBCAFE\QLCHBCAFE\bin\Debug\QLCHBCAFE.exe
+D:\QLCHBCAFE\QLCHBCAFE\bin\Debug\QLCHBCAFE.pdb
+D:\QLCHBCAFE\QLCHBCAFE\obj\Debug\QLCHBCAFE.csproj.AssemblyReference.cache
+D:\QLCHBCAFE\QLCHBCAFE\obj\Debug\QLCHBCAFE.Form1.resources
+D:\QLCHBCAFE\QLCHBCAFE\obj\Debug\QLCHBCAFE.Properties.Resources.resources
+D:\QLCHBCAFE\QLCHBCAFE\obj\Debug\QLCHBCAFE.csproj.GenerateResource.cache
+D:\QLCHBCAFE\QLCHBCAFE\obj\Debug\QLCHBCAFE.csproj.CoreCompileInputs.cache
+D:\QLCHBCAFE\QLCHBCAFE\obj\Debug\QLCHBCAFE.exe
+D:\QLCHBCAFE\QLCHBCAFE\obj\Debug\QLCHBCAFE.pdb
