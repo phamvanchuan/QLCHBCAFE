@@ -1,0 +1,10 @@
+D:\test\nhom5\Quanlybancaphe\Quanlybancaphe\bin\Debug\Quanlybancaphe.exe.config
+D:\test\nhom5\Quanlybancaphe\Quanlybancaphe\bin\Debug\Quanlybancaphe.exe
+D:\test\nhom5\Quanlybancaphe\Quanlybancaphe\bin\Debug\Quanlybancaphe.pdb
+D:\test\nhom5\Quanlybancaphe\Quanlybancaphe\obj\Debug\Quanlybancaphe.csproj.AssemblyReference.cache
+D:\test\nhom5\Quanlybancaphe\Quanlybancaphe\obj\Debug\Quanlybancaphe.Form1.resources
+D:\test\nhom5\Quanlybancaphe\Quanlybancaphe\obj\Debug\Quanlybancaphe.Properties.Resources.resources
+D:\test\nhom5\Quanlybancaphe\Quanlybancaphe\obj\Debug\Quanlybancaphe.csproj.GenerateResource.cache
+D:\test\nhom5\Quanlybancaphe\Quanlybancaphe\obj\Debug\Quanlybancaphe.csproj.CoreCompileInputs.cache
+D:\test\nhom5\Quanlybancaphe\Quanlybancaphe\obj\Debug\Quanlybancaphe.exe
+D:\test\nhom5\Quanlybancaphe\Quanlybancaphe\obj\Debug\Quanlybancaphe.pdb
