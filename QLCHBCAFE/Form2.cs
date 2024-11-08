@@ -14,6 +14,7 @@ namespace QLCHBCAFE
     {
         public Form2()
         {
+        //sss
             InitializeComponent();
         }
     }
