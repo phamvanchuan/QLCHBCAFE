@@ -1,22 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProductVersion>8.0.30703</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{10D3DE65-C050-463D-9677-A41E3BB530DB}</ProjectGuid>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BCC4A17F-AD53-46EC-9AA2-7AB549A52B08}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>QuanCaPhe</RootNamespace>
-    <AssemblyName>QuanCaPhe</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
-    <TargetFrameworkProfile>
-    </TargetFrameworkProfile>
+    <RootNamespace>QLCHBCAFE</RootNamespace>
+    <AssemblyName>QLCHBCAFE</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
-    <PlatformTarget>x86</PlatformTarget>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,17 +22,15 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
-    <PlatformTarget>x86</PlatformTarget>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -45,120 +41,37 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="bcnhap.cs" />
-    <Compile Include="bcxuat.cs" />
-    <Compile Include="datban.cs" />
-    <Compile Include="doanhthu.cs" />
-    <Compile Include="frm_bc&amp;tknhap.cs">
+    <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_bc&amp;tknhap.Designer.cs">
-      <DependentUpon>frm_bc&amp;tknhap.cs</DependentUpon>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_bc&amp;tkxuat.cs">
+    <Compile Include="Form2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_bc&amp;tkxuat.Designer.cs">
-      <DependentUpon>frm_bc&amp;tkxuat.cs</DependentUpon>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_chinh.cs">
+    <Compile Include="Form3.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_chinh.Designer.cs">
-      <DependentUpon>frm_chinh.cs</DependentUpon>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_chonban.cs">
+    <Compile Include="Form4.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_chonban.Designer.cs">
-      <DependentUpon>frm_chonban.cs</DependentUpon>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_dangnhap.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frm_dangnhap.Designer.cs">
-      <DependentUpon>frm_dangnhap.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frm_doanhthu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frm_doanhthu.Designer.cs">
-      <DependentUpon>frm_doanhthu.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frm_khachdatban.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frm_khachdatban.Designer.cs">
-      <DependentUpon>frm_khachdatban.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frm_nhacungcap.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frm_nhacungcap.Designer.cs">
-      <DependentUpon>frm_nhacungcap.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frm_nhanvien.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frm_nhanvien.Designer.cs">
-      <DependentUpon>frm_nhanvien.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frm_quanlysanpham.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frm_quanlysanpham.Designer.cs">
-      <DependentUpon>frm_quanlysanpham.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frm_xuathoadon.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frm_xuathoadon.Designer.cs">
-      <DependentUpon>frm_xuathoadon.cs</DependentUpon>
-    </Compile>
-    <Compile Include="hoadon.cs" />
-    <Compile Include="ketnoi.cs" />
-    <Compile Include="nhacungcap.cs" />
-    <Compile Include="nhanvien.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="sanpham.cs" />
-    <EmbeddedResource Include="frm_bc&amp;tknhap.resx">
-      <DependentUpon>frm_bc&amp;tknhap.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frm_bc&amp;tkxuat.resx">
-      <DependentUpon>frm_bc&amp;tkxuat.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frm_chinh.resx">
-      <DependentUpon>frm_chinh.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frm_chonban.resx">
-      <DependentUpon>frm_chonban.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frm_dangnhap.resx">
-      <DependentUpon>frm_dangnhap.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frm_doanhthu.resx">
-      <DependentUpon>frm_doanhthu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frm_khachdatban.resx">
-      <DependentUpon>frm_khachdatban.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frm_nhacungcap.resx">
-      <DependentUpon>frm_nhacungcap.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frm_nhanvien.resx">
-      <DependentUpon>frm_nhanvien.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frm_quanlysanpham.resx">
-      <DependentUpon>frm_quanlysanpham.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frm_xuathoadon.resx">
-      <DependentUpon>frm_xuathoadon.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -167,9 +80,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="app.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -181,20 +92,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\78566fbeeb208c8.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\9357a49e58419f7.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\coffee-background-12537.jpeg" />
+    <None Include="App.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
 </Project>
