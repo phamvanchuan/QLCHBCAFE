@@ -5,212 +5,145 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
-namespace QLCHBCAFE
+namespace QuanCaPhe
 {
-    public partial class Form1 : Form
+    public partial class frm_chinh : Form
     {
-        public Form1()
+        private int childFormNumber = 0;
+
+        public frm_chinh()
         {
             InitializeComponent();
-            Desing();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
 
         }
-        private void Desing()
+
+        SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-CDSNGVK\MAY1;Initial Catalog=QuanCaPhe;Integrated Security=True");
+
+        private void ShowNewForm(object sender, EventArgs e)
         {
-            panelMedia.Visible = false;
-            panelPlay.Visible = false;
-            panelTools.Visible = false;
+            Form childForm = new Form();
+            childForm.MdiParent = this;
+            childForm.Text = "Window " + childFormNumber++;
+            childForm.Show();
         }
-        private void anMenucon()
+
+        private void OpenFile(object sender, EventArgs e)
         {
-            if(panelMedia.Visible==true) 
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
+            openFileDialog.Filter = "Text Files (*.txt)|*.txt|All Files (*.*)|*.*";
+            if (openFileDialog.ShowDialog(this) == DialogResult.OK)
             {
-                panelMedia.Visible = false;
-            }
-            if (panelPlay.Visible == true)
-            {
-                panelPlay.Visible = false;
-            }
-            if (panelTools.Visible == true)
-            {
-                panelTools.Visible = false;
-            }
-        }
-        private void hienMenucon(Panel panel)
-        {
-            if( panel.Visible==false)
-            {
-                anMenucon();
-                panel.Visible = true;
-            }
-            else
-            {
-                panel.Visible = false;
+                string FileName = openFileDialog.FileName;
             }
         }
 
-        private void btnmedia_Click(object sender, EventArgs e)
+        private void SaveAsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            hienMenucon(panelMedia);
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            openChillform(new FORMTEXT1());
-            //
-            //
-            anMenucon();
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            openChillform(new frDangNhap());
-            //
-            //
-            anMenucon();
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            //
-            //
-            anMenucon();
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            //
-            //
-            anMenucon();
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-            //
-            //
-            anMenucon();
-        }
-
-        private void btnequa_Click(object sender, EventArgs e)
-        {
-            openChillform(new FORMTEXT2());
-            //
-            //
-            anMenucon();
-        }
-
-        private void btnplay_Click(object sender, EventArgs e)
-        {
-            hienMenucon(panelPlay);
-        }
-
-        private void button19_Click(object sender, EventArgs e)
-        {
-            //
-            //
-            anMenucon();
-        }
-
-        private void button18_Click(object sender, EventArgs e)
-        {
-            //
-            //
-            anMenucon();
-        }
-
-        private void button17_Click(object sender, EventArgs e)
-        {
-            //
-            //
-            anMenucon();
-        }
-
-        private void button16_Click(object sender, EventArgs e)
-        {
-            //
-            //
-            anMenucon();
-        }
-
-        private void button15_Click(object sender, EventArgs e)
-        {
-            //
-            //
-            anMenucon();
-        }
-
-        private void button13_Click(object sender, EventArgs e)
-        {
-            //
-            //
-            anMenucon();
-        }
-
-        private void button12_Click(object sender, EventArgs e)
-        {
-            //
-            //
-            anMenucon();
-        }
-
-        private void button11_Click(object sender, EventArgs e)
-        {
-            //
-            //
-            anMenucon();
-        }
-
-        private void button10_Click(object sender, EventArgs e)
-        {
-            //
-            //
-            anMenucon();
-        }
-
-        private void button9_Click(object sender, EventArgs e)
-        {
-            //
-            //
-            anMenucon();
-        }
-
-        private void btnhelp_Click(object sender, EventArgs e)
-        {
-            //
-            //
-            anMenucon();
-        }
-
-        private void btntools_Click(object sender, EventArgs e)
-        {
-            hienMenucon(panelTools);
-        }
-
-        private Form activeForm = null;
-        private void openChillform(Form chillForm)
-        {
-            if(activeForm != null)
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
+            saveFileDialog.Filter = "Text Files (*.txt)|*.txt|All Files (*.*)|*.*";
+            if (saveFileDialog.ShowDialog(this) == DialogResult.OK)
             {
-                activeForm.Close();
+                string FileName = saveFileDialog.FileName;
             }
+        }
 
-            chillForm.TopLevel = false;
-            activeForm = chillForm;
-                chillForm.FormBorderStyle = FormBorderStyle.None;
-                chillForm.Dock = DockStyle.Fill;
-                panelChillform.Controls.Add(chillForm);
-                panelChillform.Tag = chillForm;
-                chillForm.BringToFront();
-                chillForm.Show();
-            
-            
+        private void ExitToolsStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+
+        private void CascadeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LayoutMdi(MdiLayout.Cascade);
+        }
+
+        private void TileVerticalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LayoutMdi(MdiLayout.TileVertical);
+        }
+
+        private void TileHorizontalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LayoutMdi(MdiLayout.TileHorizontal);
+        }
+
+        private void ArrangeIconsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LayoutMdi(MdiLayout.ArrangeIcons);
+        }
+
+        private void CloseAllToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form childForm in MdiChildren)
+            {
+                childForm.Close();
+            }
+        }
+
+       
+
+        private void tHOÁTToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn thoát khỏi chương trình?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == System.Windows.Forms.DialogResult.Yes)
+                Application.Exit();
+        }
+
+
+     
+
+        private void qUẢNLÝSẢNPHẨMToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frm_quanlysanpham qlsp = new frm_quanlysanpham();
+            qlsp.ShowDialog();
+        }
+
+        private void qUẢNLÝNHÀCUNGCẤPToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frm_nhacungcap ncc = new frm_nhacungcap();
+            ncc.ShowDialog();
+        }
+
+        private void bCTKNHAPToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frm_bc_tknhap f = new frm_bc_tknhap();
+            f.ShowDialog();
+        }
+
+        private void bCTKXUẤTToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frm_bc_tkxuat f = new frm_bc_tkxuat();
+            f.ShowDialog();
+        }
+
+        private void qUẢNLÝNHÂNVIÊNToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            frm_nhanvien qlnhanvien = new frm_nhanvien();
+            qlnhanvien.ShowDialog();
+        }
+
+        private void qToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frm_khachdatban kdb = new frm_khachdatban();
+            kdb.ShowDialog();
+        }
+
+        private void xUẤTHÓAĐƠNToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frm_xuathoadon xhd = new frm_xuathoadon();
+            xhd.ShowDialog();
+        }
+
+        private void tKDOANHTHUToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frm_doanhthu f = new frm_doanhthu();
+            f.ShowDialog();
         }
     }
 }
