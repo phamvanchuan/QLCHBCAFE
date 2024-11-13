@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BCC4A17F-AD53-46EC-9AA2-7AB549A52B08}</ProjectGuid>
+    <ProjectGuid>{10D3DE65-C050-463D-9677-A41E3BB530DB}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>QLCHBCAFE</RootNamespace>
     <AssemblyName>QLCHBCAFE</AssemblyName>
