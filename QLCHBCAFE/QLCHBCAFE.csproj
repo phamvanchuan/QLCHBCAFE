@@ -46,32 +46,107 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="bcnhap.cs" />
+    <Compile Include="bcxuat.cs" />
+    <Compile Include="datban.cs" />
+    <Compile Include="doanhthu.cs" />
+    <Compile Include="frm_bc&amp;tknhap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="frm_bc&amp;tknhap.Designer.cs">
+      <DependentUpon>frm_bc&amp;tknhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="frm_bc&amp;tkxuat.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="frm_bc&amp;tkxuat.Designer.cs">
+      <DependentUpon>frm_bc&amp;tkxuat.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form3.cs">
+    <Compile Include="frm_chinh.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form3.Designer.cs">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <Compile Include="frm_chinh.Designer.cs">
+      <DependentUpon>frm_chinh.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form4.cs">
+    <Compile Include="frm_chonban.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form4.Designer.cs">
-      <DependentUpon>Form4.cs</DependentUpon>
+    <Compile Include="frm_chonban.Designer.cs">
+      <DependentUpon>frm_chonban.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_doanhthu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_doanhthu.Designer.cs">
+      <DependentUpon>frm_doanhthu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_khachdatban.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_khachdatban.Designer.cs">
+      <DependentUpon>frm_khachdatban.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_nhacungcap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_nhacungcap.Designer.cs">
+      <DependentUpon>frm_nhacungcap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_nhanvien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_nhanvien.Designer.cs">
+      <DependentUpon>frm_nhanvien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_quanlysanpham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_quanlysanpham.Designer.cs">
+      <DependentUpon>frm_quanlysanpham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_xuathoadon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_xuathoadon.Designer.cs">
+      <DependentUpon>frm_xuathoadon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hoadon.cs" />
+    <Compile Include="ketnoi.cs" />
+    <Compile Include="nhacungcap.cs" />
+    <Compile Include="nhanvien.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sanpham.cs" />
+    <EmbeddedResource Include="frm_bc&amp;tknhap.resx">
+      <DependentUpon>frm_bc&amp;tknhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_bc&amp;tkxuat.resx">
+      <DependentUpon>frm_bc&amp;tkxuat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_chinh.resx">
+      <DependentUpon>frm_chinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_chonban.resx">
+      <DependentUpon>frm_chonban.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_doanhthu.resx">
+      <DependentUpon>frm_doanhthu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_khachdatban.resx">
+      <DependentUpon>frm_khachdatban.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_nhacungcap.resx">
+      <DependentUpon>frm_nhacungcap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_nhanvien.resx">
+      <DependentUpon>frm_nhanvien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_quanlysanpham.resx">
+      <DependentUpon>frm_quanlysanpham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_xuathoadon.resx">
+      <DependentUpon>frm_xuathoadon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -80,6 +155,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -93,6 +169,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="database\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\coffee-background-12537.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
