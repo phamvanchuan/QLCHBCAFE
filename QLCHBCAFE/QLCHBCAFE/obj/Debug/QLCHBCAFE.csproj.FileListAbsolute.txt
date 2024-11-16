@@ -32,3 +32,4 @@ E:\QLCHBCAFE\QLCHBCAFE\obj\Debug\QLCHBCAFE.fr_nhacungcap.resources
 E:\QLCHBCAFE\QLCHBCAFE\obj\Debug\QLCHBCAFE.fr_bc_tknhap.resources
 E:\QLCHBCAFE\QLCHBCAFE\obj\Debug\QLCHBCAFE.fr_bc_tkxuat.resources
 E:\QLCHBCAFE\QLCHBCAFE\obj\Debug\QLCHBCAFE.fr_doanhthu.resources
+E:\QLCHBCAFE\QLCHBCAFE\obj\Debug\QLCHBCAFE.fr_chonban.resources

@@ -72,9 +72,9 @@
             this.grb_ttncc.Dock = System.Windows.Forms.DockStyle.Top;
             this.grb_ttncc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grb_ttncc.Location = new System.Drawing.Point(0, 0);
-            this.grb_ttncc.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.grb_ttncc.Margin = new System.Windows.Forms.Padding(6);
             this.grb_ttncc.Name = "grb_ttncc";
-            this.grb_ttncc.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.grb_ttncc.Padding = new System.Windows.Forms.Padding(6);
             this.grb_ttncc.Size = new System.Drawing.Size(1064, 240);
             this.grb_ttncc.TabIndex = 7;
             this.grb_ttncc.TabStop = false;
@@ -135,7 +135,7 @@
             // 
             this.txtMaNCC.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaNCC.Location = new System.Drawing.Point(255, 62);
-            this.txtMaNCC.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtMaNCC.Margin = new System.Windows.Forms.Padding(6);
             this.txtMaNCC.Name = "txtMaNCC";
             this.txtMaNCC.Size = new System.Drawing.Size(223, 30);
             this.txtMaNCC.TabIndex = 39;
@@ -144,7 +144,7 @@
             // 
             this.txtTenNCC.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTenNCC.Location = new System.Drawing.Point(720, 62);
-            this.txtTenNCC.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtTenNCC.Margin = new System.Windows.Forms.Padding(6);
             this.txtTenNCC.Name = "txtTenNCC";
             this.txtTenNCC.Size = new System.Drawing.Size(278, 30);
             this.txtTenNCC.TabIndex = 40;
@@ -153,7 +153,7 @@
             // 
             this.txtDiaChi.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDiaChi.Location = new System.Drawing.Point(255, 176);
-            this.txtDiaChi.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtDiaChi.Margin = new System.Windows.Forms.Padding(6);
             this.txtDiaChi.Name = "txtDiaChi";
             this.txtDiaChi.Size = new System.Drawing.Size(743, 30);
             this.txtDiaChi.TabIndex = 41;
@@ -162,7 +162,7 @@
             // 
             this.txtSDT.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSDT.Location = new System.Drawing.Point(255, 119);
-            this.txtSDT.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtSDT.Margin = new System.Windows.Forms.Padding(6);
             this.txtSDT.Name = "txtSDT";
             this.txtSDT.Size = new System.Drawing.Size(229, 30);
             this.txtSDT.TabIndex = 42;
@@ -171,7 +171,7 @@
             // 
             this.txtEmail.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.Location = new System.Drawing.Point(720, 119);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(6);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(278, 30);
             this.txtEmail.TabIndex = 43;
@@ -203,6 +203,7 @@
             this.btn_thoat.TabIndex = 25;
             this.btn_thoat.Text = "Thoát";
             this.btn_thoat.UseVisualStyleBackColor = false;
+            this.btn_thoat.Click += new System.EventHandler(this.btn_thoat_Click);
             // 
             // btn_xoa
             // 
@@ -218,6 +219,7 @@
             this.btn_xoa.TabIndex = 24;
             this.btn_xoa.Text = "Xóa";
             this.btn_xoa.UseVisualStyleBackColor = false;
+            this.btn_xoa.Click += new System.EventHandler(this.btn_xoa_Click);
             // 
             // btn_sua
             // 
@@ -233,6 +235,7 @@
             this.btn_sua.TabIndex = 23;
             this.btn_sua.Text = "Sửa";
             this.btn_sua.UseVisualStyleBackColor = false;
+            this.btn_sua.Click += new System.EventHandler(this.btn_sua_Click);
             // 
             // btn_them
             // 
@@ -248,6 +251,7 @@
             this.btn_them.TabIndex = 22;
             this.btn_them.Text = "Thêm";
             this.btn_them.UseVisualStyleBackColor = false;
+            this.btn_them.Click += new System.EventHandler(this.btn_them_Click);
             // 
             // groupBox1
             // 
@@ -333,7 +337,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.grb_ttncc);
             this.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "fr_nhacungcap";
             this.Text = "fr_nhacungcap";
             this.grb_ttncc.ResumeLayout(false);

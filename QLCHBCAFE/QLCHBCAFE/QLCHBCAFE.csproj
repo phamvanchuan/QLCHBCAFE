@@ -74,6 +74,12 @@
     <Compile Include="fr_bc&amp;tkxuat.Designer.cs">
       <DependentUpon>fr_bc&amp;tkxuat.cs</DependentUpon>
     </Compile>
+    <Compile Include="fr_chonban.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fr_chonban.Designer.cs">
+      <DependentUpon>fr_chonban.cs</DependentUpon>
+    </Compile>
     <Compile Include="fr_doanhthu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,6 +134,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fr_bc&amp;tkxuat.resx">
       <DependentUpon>fr_bc&amp;tkxuat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fr_chonban.resx">
+      <DependentUpon>fr_chonban.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fr_doanhthu.resx">
       <DependentUpon>fr_doanhthu.cs</DependentUpon>

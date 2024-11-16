@@ -10,18 +10,17 @@ using System.Windows.Forms;
 
 namespace QLCHBCAFE
 {
-    public partial class fr_doanhthu : Form
+    public partial class fr_chonban : Form
     {
-        doanhthu dn = new doanhthu();
-        public fr_doanhthu()
+        public string TenBanDuocChon { get; set; }
+        public fr_chonban()
         {
             InitializeComponent();
-            dataGridView1.DataSource = dn.getdl();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void fr_chonban_Load(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = dn.getdl(textBox1.Text, textBox2.Text);
+
         }
     }
 }

@@ -95,6 +95,7 @@
             this.button1.TabIndex = 47;
             this.button1.Text = "Hiển thị toàn bộ dữ liệu";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // textBox1
             // 
@@ -114,6 +115,7 @@
             this.btnXemBaoCao.TabIndex = 45;
             this.btnXemBaoCao.Text = "Xem báo cáo";
             this.btnXemBaoCao.UseVisualStyleBackColor = false;
+            this.btnXemBaoCao.Click += new System.EventHandler(this.btnXemBaoCao_Click_1);
             // 
             // label2
             // 
@@ -150,9 +152,10 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "fr_bc_tkxuat";
             this.Text = "fr_bc_tkxuat";
+            this.Load += new System.EventHandler(this.fr_bc_tkxuat_Load);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvBaoCaoThuoc)).EndInit();
             this.ResumeLayout(false);
